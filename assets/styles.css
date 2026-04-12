@@ -12,15 +12,12 @@
   --radius: 28px;
   --container: 1200px;
 }
-
 * {
   box-sizing: border-box;
 }
-
 html {
   scroll-behavior: smooth;
 }
-
 body {
   margin: 0;
   font-family: "Noto Sans", "Segoe UI", Arial, sans-serif;
@@ -28,22 +25,18 @@ body {
   background: linear-gradient(135deg, #eef3fa 0%, #e8edf6 100%);
   line-height: 1.65;
 }
-
 a {
   color: inherit;
   text-decoration: none;
 }
-
 img {
   max-width: 100%;
   display: block;
 }
-
 .container {
   width: min(var(--container), calc(100% - 40px));
   margin: 0 auto;
 }
-
 .site-header {
   position: sticky;
   top: 0;
@@ -52,7 +45,6 @@ img {
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(215, 222, 234, 0.8);
 }
-
 .header-inner {
   display: flex;
   align-items: center;
@@ -60,13 +52,11 @@ img {
   gap: 20px;
   min-height: 88px;
 }
-
 .brand {
   display: flex;
   align-items: center;
   gap: 14px;
 }
-
 .brand-mark {
   width: 56px;
   height: 56px;
@@ -80,21 +70,18 @@ img {
   box-shadow: var(--shadow);
   flex-shrink: 0;
 }
-
 .brand-text strong {
   display: block;
   margin: 0;
   font-size: 1.05rem;
   line-height: 1.2;
 }
-
 .brand-text small {
   display: block;
   color: var(--muted);
   margin-top: 4px;
   font-size: 0.95rem;
 }
-
 .site-nav {
   display: flex;
   align-items: center;
@@ -108,19 +95,16 @@ img {
   font-weight: 600;
   color: var(--text);
 }
-
 .site-nav a.active,
 .site-nav a:hover {
   background: #fff;
   box-shadow: 0 6px 18px rgba(10, 24, 54, 0.08);
 }
-
 .lang-switch {
   display: flex;
   align-items: center;
   gap: 8px;
 }
-
 .lang-switch a {
   padding: 10px 12px;
   border-radius: 999px;
@@ -135,7 +119,6 @@ img {
   background: linear-gradient(135deg, var(--primary), var(--accent));
   border-color: transparent;
 }
-
 .eyebrow,
 .lang-eyebrow {
   margin: 0 0 12px;
@@ -145,7 +128,6 @@ img {
   text-transform: uppercase;
   font-size: 0.9rem;
 }
-
 .btn {
   display: inline-flex;
   align-items: center;
@@ -157,16 +139,13 @@ img {
   border: 1px solid transparent;
   transition: 0.2s ease;
 }
-
 .btn:hover {
   transform: translateY(-1px);
 }
-
 .btn-primary {
   color: #fff;
   background: linear-gradient(135deg, var(--primary), var(--accent));
 }
-
 .btn-secondary,
 .btn-light {
   color: var(--primary-dark);
@@ -705,7 +684,6 @@ img {
   .lang-actions {
     flex-direction: column;
   }
-
   .btn {
     width: 100%;
   }
