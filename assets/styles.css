@@ -454,12 +454,12 @@ img {
 .lang-brand-head {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 24px;
   margin-bottom: 28px;
 }
 
 .lang-logo-img {
-  width: 96px;
+  width: 128px;
   height: auto;
   flex-shrink: 0;
   object-fit: contain;
@@ -467,8 +467,8 @@ img {
 
 .lang-brand-text h1 {
   margin: 0 0 8px;
-  font-size: 2rem;
-  line-height: 1.15;
+  font-size: 2.35rem;
+  line-height: 1.12;
   color: #1b2638;
 }
 
@@ -677,10 +677,15 @@ img {
   .lang-brand-head {
     flex-direction: column;
     align-items: flex-start;
+    gap: 14px;
   }
 
   .lang-logo-img {
-    width: 78px;
+    width: 96px;
+  }
+
+  .lang-brand-text h1 {
+    font-size: 2rem;
   }
 
   .lang-copy-panel h2,
