@@ -12,12 +12,15 @@
   --radius: 28px;
   --container: 1200px;
 }
+
 * {
   box-sizing: border-box;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 body {
   margin: 0;
   font-family: "Noto Sans", "Segoe UI", Arial, sans-serif;
@@ -25,18 +28,22 @@ body {
   background: linear-gradient(135deg, #eef3fa 0%, #e8edf6 100%);
   line-height: 1.65;
 }
+
 a {
   color: inherit;
   text-decoration: none;
 }
+
 img {
   max-width: 100%;
   display: block;
 }
+
 .container {
   width: min(var(--container), calc(100% - 40px));
   margin: 0 auto;
 }
+
 .site-header {
   position: sticky;
   top: 0;
@@ -45,6 +52,7 @@ img {
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(215, 222, 234, 0.8);
 }
+
 .header-inner {
   display: flex;
   align-items: center;
@@ -52,11 +60,13 @@ img {
   gap: 20px;
   min-height: 88px;
 }
+
 .brand {
   display: flex;
   align-items: center;
   gap: 14px;
 }
+
 .brand-mark {
   width: 56px;
   height: 56px;
@@ -77,34 +87,40 @@ img {
   font-size: 1.05rem;
   line-height: 1.2;
 }
+
 .brand-text small {
   display: block;
   color: var(--muted);
   margin-top: 4px;
   font-size: 0.95rem;
 }
+
 .site-nav {
   display: flex;
   align-items: center;
   gap: 8px;
   flex-wrap: wrap;
 }
+
 .site-nav a {
   padding: 12px 18px;
   border-radius: 999px;
   font-weight: 600;
   color: var(--text);
 }
+
 .site-nav a.active,
 .site-nav a:hover {
   background: #fff;
   box-shadow: 0 6px 18px rgba(10, 24, 54, 0.08);
 }
+
 .lang-switch {
   display: flex;
   align-items: center;
   gap: 8px;
 }
+
 .lang-switch a {
   padding: 10px 12px;
   border-radius: 999px;
@@ -113,11 +129,13 @@ img {
   color: var(--muted);
   background: #fff;
 }
+
 .lang-switch a.active {
   color: #fff;
   background: linear-gradient(135deg, var(--primary), var(--accent));
   border-color: transparent;
 }
+
 .eyebrow,
 .lang-eyebrow {
   margin: 0 0 12px;
@@ -127,6 +145,7 @@ img {
   text-transform: uppercase;
   font-size: 0.9rem;
 }
+
 .btn {
   display: inline-flex;
   align-items: center;
@@ -138,22 +157,27 @@ img {
   border: 1px solid transparent;
   transition: 0.2s ease;
 }
+
 .btn:hover {
   transform: translateY(-1px);
 }
+
 .btn-primary {
   color: #fff;
   background: linear-gradient(135deg, var(--primary), var(--accent));
 }
+
 .btn-secondary,
 .btn-light {
   color: var(--primary-dark);
   background: #fff;
   border-color: var(--line);
 }
+
 .hero {
   padding: 72px 0 48px;
 }
+
 .hero-grid,
 .brand-home-grid {
   display: grid;
@@ -161,6 +185,7 @@ img {
   gap: 34px;
   align-items: center;
 }
+
 .hero h1,
 .page-hero h1,
 .brand-home-copy h1,
@@ -171,6 +196,7 @@ img {
   letter-spacing: -0.03em;
   color: var(--text);
 }
+
 .hero-text,
 .page-hero p,
 .brand-home-copy p,
@@ -179,6 +205,7 @@ img {
   color: var(--muted);
   font-size: 1.08rem;
 }
+
 .hero-card,
 .panel-card,
 .page-panel,
@@ -201,6 +228,7 @@ img {
   border-radius: var(--radius);
   box-shadow: var(--shadow);
 }
+
 .hero-card,
 .placeholder-box,
 .page-panel,
@@ -211,6 +239,7 @@ img {
 .brand-home-visual {
   padding: 32px;
 }
+
 .card-label,
 .placeholder-label {
   display: inline-block;
@@ -222,20 +251,25 @@ img {
   font-size: 0.92rem;
   margin-bottom: 18px;
 }
+
 .section {
   padding: 52px 0;
 }
+
 .section-alt {
-  background: linear-gradient(180deg, rgba(255,255,255,0.45), rgba(255,255,255,0));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0));
 }
+
 .section-heading {
   max-width: 860px;
   margin-bottom: 28px;
 }
+
 .section-heading p {
   color: var(--muted);
   margin: 0;
 }
+
 .benefit-grid,
 .contact-grid,
 .why-grid,
@@ -244,12 +278,14 @@ img {
   grid-template-columns: repeat(3, 1fr);
   gap: 22px;
 }
+
 .services-grid,
 .grid-2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 22px;
 }
+
 .benefit-card,
 .service-card,
 .contact-card,
@@ -258,31 +294,36 @@ img {
 .brand-gallery-card {
   padding: 24px;
 }
+
 .benefit-number {
   display: inline-grid;
   place-items: center;
-  width: 35px;
-  height: 35px;
+  width: 38px;
+  height: 38px;
   border-radius: 12px;
   background: #eef3ff;
   color: var(--primary);
   font-weight: 800;
   margin-bottom: 12px;
 }
+
 .two-col,
 .page-layout {
   display: grid;
   grid-template-columns: 1.15fr 0.85fr;
-  gap: 26px;
+  gap: 28px;
 }
+
 .feature-stack {
   display: grid;
-  gap: 16px;
-  margin-top: 20px;
+  gap: 18px;
+  margin-top: 22px;
 }
+
 .feature-item {
-  padding: 20px;
+  padding: 22px;
 }
+
 .feature-item h3,
 .service-card h3,
 .benefit-card h3,
@@ -294,6 +335,7 @@ img {
   margin: 0 0 10px;
   font-size: 1.2rem;
 }
+
 .feature-item p,
 .service-card p,
 .benefit-card p,
@@ -306,144 +348,172 @@ img {
   margin: 0;
   color: var(--muted);
 }
+
 .page-hero {
-  padding: 60px 0 20px;
+  padding: 64px 0 24px;
 }
+
 .divider-list {
   border-top: 1px solid var(--line);
 }
+
 .divider-item {
   padding: 18px 0;
   border-bottom: 1px solid var(--line);
 }
+
 .divider-item strong {
   display: block;
   margin-bottom: 6px;
   font-size: 1.02rem;
 }
+
 .cta-band {
   background: linear-gradient(135deg, var(--primary), var(--primary-dark));
   color: #fff;
 }
+
 .cta-band .eyebrow {
-  color: rgba(255,255,255,0.8);
+  color: rgba(255, 255, 255, 0.8);
 }
+
 .cta-band-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 24px;
 }
+
 .site-footer {
   background: #071a3c;
   color: #fff;
   margin-top: 36px;
 }
+
 .footer-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 28px;
   padding: 44px 0 28px;
 }
+
 .footer-grid h3,
 .footer-grid h4 {
   margin-top: 0;
   margin-bottom: 14px;
 }
+
 .footer-grid p,
 .footer-grid li,
 .footer-grid a {
-  color: rgba(255,255,255,0.86);
+  color: rgba(255, 255, 255, 0.86);
 }
+
 .footer-list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
+
 .footer-list li {
   margin-bottom: 10px;
 }
+
 .footer-bottom {
-  border-top: 1px solid rgba(255,255,255,0.14);
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
   padding: 18px 0 28px;
-  color: rgba(255,255,255,0.72);
+  color: rgba(255, 255, 255, 0.72);
 }
+
 /* Root landing page */
 .lang-landing-page {
   background: linear-gradient(135deg, #eef3fa 0%, #e8edf6 100%);
 }
+
 .lang-landing-wrap {
   min-height: 100vh;
   display: grid;
   place-items: center;
   padding: 48px 20px;
 }
+
 .lang-landing-hero {
   width: min(1280px, 100%);
   display: grid;
   grid-template-columns: 1.02fr 0.98fr;
-  gap: 30px;
+  gap: 40px;
   align-items: stretch;
 }
+
 .lang-copy-panel {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+  padding-top: 22px;
 }
+
+/* CÂN LẠI KHỐI THƯƠNG HIỆU */
 .lang-brand-head {
-  display: grid;
-  grid-template-columns: minmax(220px, 33%) 1fr;
+  display: flex;
   align-items: center;
-  gap: 34px;
-  margin-bottom: 34px;
+  gap: 22px;
+  margin-bottom: 22px;
 }
+
 .lang-logo-img {
-  width: 100%;
-  max-width: 240px;
-  min-width: 220px;
+  width: 150px;
+  min-width: 150px;
+  max-width: 150px;
   height: auto;
-  flex-shrink: 0;
   object-fit: contain;
-  padding: 14px 16px;
-  background: linear-gradient(180deg, #ffffff 0%, #f7fbff 100%);
-  border: 1px solid rgba(15, 78, 168, 0.16);
-  border-radius: 22px;
-  box-shadow: 0 14px 34px rgba(15, 31, 63, 0.12);
+  padding: 14px;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+  border: 1px solid rgba(15, 78, 168, 0.12);
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(15, 31, 63, 0.06);
 }
+
 .lang-brand-text {
   min-width: 0;
 }
+
 .lang-brand-text h1 {
-  margin: 0 0 10px;
-  font-size: clamp(2.8rem, 4vw, 3.45rem);
-  line-height: 1.04;
-  letter-spacing: -0.035em;
+  margin: 0 0 8px;
+  font-size: clamp(2.3rem, 3.6vw, 3rem);
+  line-height: 1.05;
+  letter-spacing: -0.028em;
   font-weight: 800;
   color: #102544;
 }
+
 .lang-brand-vi,
 .lang-brand-ko {
   margin: 0;
   color: var(--muted);
-  font-size: 1.1rem;
-  line-height: 1.55;
+  font-size: 0.98rem;
+  line-height: 1.45;
   font-weight: 500;
 }
+
 .lang-brand-ko {
-  margin-top: 8px;
+  margin-top: 6px;
 }
+
 .lang-subtitle-ko {
   margin-top: 8px;
 }
+
 .lang-actions {
   display: flex;
   gap: 14px;
   flex-wrap: wrap;
   margin-top: 30px;
 }
+
 .lang-actions .btn {
   min-width: 170px;
 }
+
 .lang-note {
   display: flex;
   flex-wrap: wrap;
@@ -455,12 +525,14 @@ img {
   font-size: 0.96rem;
   font-weight: 600;
 }
+
 .lang-visual-panel {
   display: flex;
   flex-direction: column;
   gap: 18px;
   justify-content: center;
 }
+
 .lang-visual-main,
 .lang-visual-card,
 .brand-home-image,
@@ -471,6 +543,7 @@ img {
   background: #fff;
   border: 1px solid var(--line);
 }
+
 .lang-visual-main img,
 .lang-visual-card img,
 .brand-home-image img,
@@ -479,6 +552,7 @@ img {
   display: block;
   object-fit: cover;
 }
+
 .lang-visual-main figcaption,
 .lang-visual-card figcaption,
 .brand-home-image figcaption {
@@ -488,46 +562,56 @@ img {
   color: #1b2638;
   background: #fff;
 }
+
 .lang-visual-grid {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
   gap: 18px;
 }
+
 .logo-card {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+
 .logo-card img {
   object-fit: contain;
   padding: 18px;
   background: #fff;
 }
+
 /* VI homepage upgrade */
 .brand-home-hero {
   padding: 72px 0 36px;
 }
+
 .brand-home-copy .eyebrow {
   margin-bottom: 12px;
 }
+
 .brand-home-copy .button-row {
   margin-top: 26px;
   display: flex;
   gap: 14px;
   flex-wrap: wrap;
 }
+
 .brand-home-panel ul {
   margin: 16px 0 0;
   padding-left: 20px;
 }
+
 .brand-home-panel li {
   margin-bottom: 10px;
 }
+
 .brand-home-visual {
   display: flex;
   flex-direction: column;
   gap: 18px;
 }
+
 .brand-home-image figcaption {
   padding: 12px 14px;
 }
@@ -580,24 +664,28 @@ img {
     font-size: 2.6rem;
   }
 
+  .lang-copy-panel {
+    padding-top: 10px;
+  }
+
   .lang-brand-head {
-    grid-template-columns: minmax(200px, 32%) 1fr;
-    gap: 28px;
-    margin-bottom: 30px;
+    gap: 16px;
+    margin-bottom: 18px;
   }
 
   .lang-logo-img {
-    max-width: 220px;
-    min-width: 200px;
+    width: 132px;
+    min-width: 132px;
+    max-width: 132px;
   }
 
   .lang-brand-text h1 {
-    font-size: clamp(2.5rem, 4vw, 3rem);
+    font-size: clamp(2.15rem, 4vw, 2.7rem);
   }
 
   .lang-brand-vi,
   .lang-brand-ko {
-    font-size: 1.04rem;
+    font-size: 0.96rem;
   }
 }
 
@@ -611,8 +699,8 @@ img {
   .section,
   .brand-home-hero,
   .brand-gallery {
-    padding-top: 36px;
-    padding-bottom: 36px;
+    padding-top: 33px;
+    padding-bottom: 33px;
   }
 
   .hero-card,
@@ -623,34 +711,38 @@ img {
   .lang-visual-panel,
   .brand-home-panel,
   .brand-home-visual {
-    padding: 22px;
+    padding: 20px;
+  }
+
+  .lang-copy-panel {
+    padding-top: 0;
   }
 
   .lang-brand-head {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 18px;
-    margin-bottom: 26px;
+    gap: 12px;
+    margin-bottom: 16px;
   }
 
   .lang-logo-img {
-    width: min(56vw, 190px);
+    width: min(46vw, 145px);
     min-width: 0;
     max-width: none;
-    padding: 12px 14px;
-    border-radius: 18px;
+    padding: 10px;
+    border-radius: 16px;
   }
 
   .lang-brand-text h1 {
-    font-size: 2.2rem;
+    font-size: 2.05rem;
     line-height: 1.08;
   }
 
   .lang-brand-vi,
   .lang-brand-ko {
-    font-size: 1rem;
-    line-height: 1.5;
+    font-size: 0.95rem;
+    line-height: 1.45;
   }
 
   .lang-copy-panel h2,
